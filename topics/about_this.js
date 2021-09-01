@@ -24,7 +24,7 @@ test("'this' on unattached function", () => {
 
     // if the function is not called as an object property 'this' is the global context 
     // (window in a browser). This is an example. Please do not do this in practise.
-    window.__ = 'Peter';
+    global.globalName = 'Peter';
     equal(alias(), "Hello, my name is Peter", "What does 'this' refer to when it is not part of an object?");
 });
 

@@ -3,14 +3,15 @@ const { equal } = require('assert')
 const { __, test } = require('../support/koans')
 
 test("defining functions directly", () => {
-    const result = "a";
+    //const result = "a";
+    let result = "a";
 
     function changeResult() {
         // the ability to access a variables defined in the same scope as the function is known as 'closure'
-        //result = "b"; tira error por asignar a una constante
+        result = "b"; // tira error si result es constante porque no se puede alterar
     };
     changeResult();
-    equal("a", result, 'what is the value of result?');
+    equal("b", result, 'what is the value of result?');
 });
 
 test("assigning functions to variables", () => {
