@@ -5,12 +5,12 @@ const { __, test } = require('../support/koans')
 test("exec", () => {
     const numberFinder = /(\d).*(\d)/;
     const results = numberFinder.exec("what if 6 turned out to be 9?");
-    ok(results.equalTo([__, __, __]), 'what is the value of results?');		
+    ok(results.equalTo([6, 9, 69]), 'what is the value of results?');
 });
 
 test("test", () => {
     const containsSelect = /select/.test("  select * from users ");
-    equal(__, containsSelect, 'does the string provided contain "select"?');
+    equal(true, containsSelect, 'does the string provided contain "select"?');
 });
 
 test("match", () => {
@@ -23,7 +23,7 @@ test("replace", () => {
     equal(__, pie, 'what is the value of pie?');
 
     pie = "what if 6 turned out to be 9?".replace(/\d/g, (number) => { // the second parameter can be a string or a function
-        const map = {'6': 'six','9': 'nine'};
+        const map = { '6': 'six', '9': 'nine' };
         return map[number];
     });
     equal(__, pie, 'what is the value of pie?');

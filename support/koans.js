@@ -17,10 +17,10 @@ Array.prototype.equalTo = function(compareTo) {
     return true;
 };
 
-const test = (message, assertion) => {
-    console.log(chalk.red())
-    assertion()
-    console.log(chalk.green(), message)
+const test = (message, assert) => {
+    console.log()
+    assert("Llamando al callback")
+    console.log(chalk.black.bgGreenBright(message))
 }
 
 module.exports = { __, test }
