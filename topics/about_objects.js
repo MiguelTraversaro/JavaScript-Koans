@@ -1,3 +1,4 @@
+const script = () => {
 // module("About Objects (topics/about_objects.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
@@ -54,3 +55,5 @@ test("adding functions", () => {
     };
     equal("I Amory Blaine am 102 years old.", person.toString(), "what should the toString function be?");
 });
+}
+module.exports = script

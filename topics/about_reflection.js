@@ -1,3 +1,4 @@
+const script = () => {
 // module("About Reflection (topics/about_reflection.js)");
 const { equal, deepEqual, ok } = require('assert')
 const { __, test } = require('../support/koans')
@@ -74,3 +75,5 @@ test("eval", () => {
     eval("result = 'apple' + ' ' + 'pie'");
     equal("apple pie", result, 'what is the value of result?');
 });
+}
+module.exports = script

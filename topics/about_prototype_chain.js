@@ -1,3 +1,4 @@
+const script = () => {
 // demonstrate objects prototype chain
 
 // https://developer.mozilla.org/en/JavaScript/Guide/Inheritance_and_the_prototype_chain
@@ -61,3 +62,5 @@ test("Is there a 'c' property on child?", () => {
 test("Is there an 'd' property on child?", () => {
     equal(null, child.d, 'what is the value of child.d?');
 });
+}
+module.exports = script

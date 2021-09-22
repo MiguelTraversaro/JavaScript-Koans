@@ -1,4 +1,5 @@
-// module("About Equality (topics/about_equality.js)");
+const script = () => {
+    // module("About Equality (topics/about_equality.js)");
 const { equal, ok } = require('assert')
 const { __, test } = require('../support/koans')
 
@@ -22,3 +23,5 @@ test("string literals", () => {
     equal("frankenstein", "frankenstein", "quote types are interchangable, but must match.");
     equal('frankenstein', 'frankenstein', "quote types can use both single and double quotes.");
 });
+}
+module.exports = script

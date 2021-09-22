@@ -1,4 +1,5 @@
-// module("About Truthyness (topics/about_truthyness.js)");
+const script = () => {
+    // module("About Truthyness (topics/about_truthyness.js)");
 const { equal, deepEqual } = require('assert')
 const { __, test } = require('../support/koans')
 
@@ -21,3 +22,5 @@ test("truthyness of null", () => {
     const nullIsTruthy = null ? true : false;
     equal(0, nullIsTruthy, 'is null truthy?');
 });
+}
+module.exports = script

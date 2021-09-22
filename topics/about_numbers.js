@@ -1,3 +1,4 @@
+const script = () => {
 // module("About Numbers (topics/about_numbers.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
@@ -15,3 +16,5 @@ test("NaN", () => {
     equal(true, Number.isNaN(resultOfFailedOperations), 'what will satisfy the equals assertion?');
     equal(false, resultOfFailedOperations == NaN, 'is NaN == NaN?');
 });
+}
+module.exports = script

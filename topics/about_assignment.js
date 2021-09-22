@@ -1,4 +1,5 @@
-// module("About Assignment (topics/about_assignment.js)");
+const script = () => {
+    // module("About Assignment (topics/about_assignment.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
 
@@ -11,3 +12,5 @@ test("global variables", () => {
     temp = 1; // Not using var is an example. Always use var in practise.
     equal(global.temp, temp, 'global variables are assigned to the global object');
 });
+}
+module.exports = script

@@ -1,3 +1,4 @@
+const script = () => {
 // module("About this (topics/about_this.js)");
 const { equal } = require('assert')
 const { __, test } = require('../support/koans')
@@ -43,3 +44,5 @@ test("'this' set explicitly", () => {
 
 // extra credit: underscore.js has a 'bind' function http://documentcloud.github.com/underscore/#bind
 // read the source and see how it is implemented
+}
+module.exports = script
