@@ -40,7 +40,6 @@ test("property enumeration", () => {
 
 test("hasOwnProperty", () => {
     const b = new B();
-    //const propertyName;
 
     const keys = [];
     for (let propertyName in b) {
@@ -52,7 +51,7 @@ test("hasOwnProperty", () => {
     // hasOwnProperty returns true if the parameter is a property directly on the object,
     // but not if it is a property accessible via the prototype chain.
     const ownKeys = [];
-    for (propertyName in b) {
+    for(let propertyName in b) {
         if (b.hasOwnProperty(propertyName)) {
             ownKeys.push(propertyName);
         }
